@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>acg.gy_19.jpg</filename>
+	<path>D:\研一\tf_preprocessing\workspace\training_demo\images\acg.gy_19.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2560</width>
+		<height>1440</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>boat</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>980</xmin>
+			<ymin>783</ymin>
+			<xmax>1102</xmax>
+			<ymax>927</ymax>
+		</bndbox>
+	</object>
+</annotation>

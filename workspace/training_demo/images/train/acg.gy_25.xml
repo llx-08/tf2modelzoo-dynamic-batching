@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>acg.gy_25.jpg</filename>
+	<path>D:\研一\tf_preprocessing\workspace\training_demo\images\acg.gy_25.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2560</width>
+		<height>1440</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>person</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1005</xmin>
+			<ymin>269</ymin>
+			<xmax>1299</xmax>
+			<ymax>941</ymax>
+		</bndbox>
+	</object>
+</annotation>

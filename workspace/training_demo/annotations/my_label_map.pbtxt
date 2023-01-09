@@ -1,0 +1,49 @@
+item {
+    id: 1
+    name: 'cat'
+}
+
+item {
+    id: 2
+    name: 'dog'
+}
+
+item {
+    id: 3
+    name: 'person'
+}
+
+item {
+    id: 4
+    name: 'chair'
+}
+
+item {
+    id: 5
+    name: 'tree'
+}
+
+item {
+    id: 6
+    name: 'lantern'
+}
+
+item {
+    id: 7
+    name: 'boat'
+}
+
+item {
+    id: 8
+    name: 'cloud'
+}
+
+item {
+    id: 9
+    name: 'plane'
+}
+
+item {
+    id: 10
+    name: 'bird'
+}

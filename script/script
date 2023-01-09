@@ -1,0 +1,27 @@
+# prepare the training config, changes need 2 apply on the pipline.config of pretrained model
+fine_tune_checkpoint: "pre-trained-models/ssd_resnet50_v1_fpn_640x640_coco17_tpu-8/checkpoint/ckpt-0" # Path to checkpoint of pre-trained model
+
+fine_tune_checkpoint_type: "detection" # Set this to "detection" since we want to be training the full detection model
+
+label_map_path: "annotations/label_map.pbtxt" # Path to label map file
+
+tf_record_input_reader {
+    input_path: "annotations/train.record" # Path to training TFRecord file
+}
+
+label_map_path: "annotations/label_map.pbtxt" # Path to label map file
+
+tf_record_input_reader {
+    input_path: "annotations/test.record" # Path to testing TFRecord
+}
+
+# retrain the model: cd in workspace/training_demo
+python model_main_tf2.py --model_dir=models/[model name U wanna retrain and save] --pipeline_config_path=models/[model name U wanna retrain and save]/pipeline.config
+
+# export the model: cd in workspace/training_demo
+python exporter_main_v2.py --inpreut_type image_tensor --pipeline_config_path models\[model name U wanna retrain and save]\pipeline.config
+    --trained_checkpoint_dir models\[model name U wanna retrain and save]\ --output_directory exported-models\[DIR U wanna save Ur exported model]
+
+
+
+
